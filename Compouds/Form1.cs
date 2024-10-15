@@ -25,7 +25,7 @@ namespace Compounds
             string category = categoryInput.Text;
 
             //check the inputted category with a switch block
-            switch(category)
+            switch (category)
             {
                 case "1":
                     categoryOutput.Text = "119-153 km/h";
@@ -118,17 +118,46 @@ namespace Compounds
         private void thisButton_Click(object sender, EventArgs e)
         {
             //alternate BackColor between Black and Goldenrod 
+            if (thisButton.BackColor == Color.Black)
+            {
+                thisButton.BackColor = Color.Goldenrod;
+            }
+            else
+            {
+                thisButton.BackColor = Color.Black;
+            }
+
         }
 
         private void thatButton_Click(object sender, EventArgs e)
         {
             //alternate BackColor between Black and Goldenrod 
+            if (thatButton.BackColor == Color.Black)
+            {
+                thatButton.BackColor = Color.Goldenrod;
+            }
+            else
+            {
+                thatButton.BackColor = Color.Black;
+            }
         }
 
         private void andButton_Click(object sender, EventArgs e)
         {
             //use compound if statements to give outputs based on 
             //if both colours are the same or different
+            if(thisButton.BackColor == Color.Black && thatButton.BackColor == Color.Black)
+            {
+                andLabel.Text = "Both buttons are black";
+            }
+            else if(thisButton.BackColor == Color.Goldenrod && thatButton.BackColor == Color.Goldenrod)
+            {
+                andLabel.Text = "Both buttons are goldenrod";
+            }
+            else
+            {
+                andLabel.Text = "The buttons are different colours";
+            }
         }
     }
 }
