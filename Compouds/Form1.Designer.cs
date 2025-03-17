@@ -228,12 +228,12 @@ namespace Compounds
             this.groupBox3.Controls.Add(this.categoryLabel);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(30, 72);
+            this.groupBox3.Location = new System.Drawing.Point(33, 72);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(262, 253);
             this.groupBox3.TabIndex = 33;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Swtich Block";
+            this.groupBox3.Text = "Switch Block";
             // 
             // hurricaneButton
             // 
